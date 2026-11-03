@@ -1,0 +1,78 @@
+name: 🐛 گزارش باگ
+description: گزارش یک خطا یا رفتار غیرمنتظره در تَوان
+title: "[BUG]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        <div dir="rtl">
+        سپاس از گزارش شما! لطفاً پیش از ارسال، Issues موجود را جستجو کنید تا از تکراری نبودن مطمئن شوید.
+        </div>
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 شرح مشکل
+      description: توضیح روشن و کوتاه مشکل
+      placeholder: چه اتفاقی می‌افتد و چه انتظار داشتید؟
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔄 مراحل بازتولید
+      description: گام به گام تا مشکل بازسازی شود
+      placeholder: |
+        ۱. به صفحهٔ ... برو
+        ۲. روی ... کلیک کن
+        ۳. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ رفتار مورد انتظار
+      description: چه باید اتفاق بیفتد؟
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ رفتار فعلی
+      description: چه اتفاقی می‌افتد؟
+    validations:
+      required: true
+  - type: input
+    id: php-version
+    attributes:
+      label: 🐘 نسخهٔ PHP
+      placeholder: "8.2.x"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: 💻 سیستم‌عامل
+      placeholder: "Linux / macOS / Windows"
+    validations:
+      required: true
+  - type: input
+    id: tavaan-version
+    attributes:
+      label: 📦 نسخهٔ تَوان
+      placeholder: "نخستین انتشار یا آخرین commit"
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📋 اطلاعات تکمیلی
+      description: لاگ، اسکرین‌شات یا هر چیز مفید دیگر
+      render: shell
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ چک‌لیست
+      options:
+        - label: Issues موجود را جستجو کرده‌ام
+          required: true
+        - label: منشور رفتاری را خوانده‌ام
+          required: true

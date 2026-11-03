@@ -1,0 +1,63 @@
+# Tavaan — .gitignore
+# پیکربندی عمومی پروژه‌های PHP تَوان
+
+# وابستگی‌ها (تَوان بدون وابستگی در زمان اجرا است؛ این فقط برای ابزارهای توسعه)
+/vendor/
+/vendor-bin/
+composer.lock
+
+# فایل‌های زمان اجرا
+/storage/cache/
+/storage/logs/
+/storage/framework/
+/storage/sessions/
+/storage/uploads/
+/storage/tmp/
+
+# پیکربندی محلی
+.env
+.env.local
+.env.*.local
+.phpunit.result.cache
+.phpstan.cache
+.php-cs-fixer.cache
+.phpunit.cache/
+
+# ویرایشگرها و سیستم‌عامل
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# گزارش‌ها و لاگ‌ها
+*.log
+logs/
+error.log
+debug.log
+
+# آرتیفکت‌های build
+/build/
+/dist/
+*.tar
+*.zip
+*.gz
+
+# تست و پوشش
+/coverage/
+/coverage-report/
+.phpunit.cache/
+
+# موقتی‌ها
+*.tmp
+*.temp
+*.bak
+*.old
+
+# فایل‌های پنهان سیستم‌عامل
+.directory
+.Trash-*
+ehthumbs.db

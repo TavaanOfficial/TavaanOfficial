@@ -1,0 +1,37 @@
+name: 🔒 گزارش امنیتی
+description: گزارش امنیتی عمومی (غیرحساس) — برای آسیب‌پذیری‌های حساس، از GitHub Security Advisories استفاده کنید
+title: "[SECURITY]: "
+labels: ["security", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        <div dir="rtl">
+        ⚠️ <strong>هشدار مهم:</strong> اگر آسیب‌پذیری حساس است، آن را در این فرم ننویسید. به‌جای آن از <a href="../../security/advisories/new">GitHub Security Advisories</a> استفاده کنید.
+        </div>
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 شرح مسألهٔ امنیتی
+      description: فقط مسائل عمومی (مثل پیشنهاد بهبود امنیتی، نه آسیب‌پذیری فعال)
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: ⚠️ اثر ممکن
+      description: چه اثری می‌تواند داشته باشد؟
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 💡 پیشنهاد رفع
+      description: راه‌حل پیشنهادی شما
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ چک‌لیست
+      options:
+        - label: این یک آسیب‌پذیری فعال و حساس نیست (برای موارد حساس از GitHub Security Advisories استفاده می‌کنم)
+          required: true

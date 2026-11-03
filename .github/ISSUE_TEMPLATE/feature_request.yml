@@ -1,0 +1,58 @@
+name: 💡 پیشنهاد ویژگی
+description: پیشنهاد یک ویژگی جدید یا بهبود در تَوان
+title: "[FEAT]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        <div dir="rtl">
+        سپاس از پیشنهاد شما! لطفاً پیش از ارسال، Issues موجود را جستجو کنید.
+        </div>
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🎯 مشکل
+      description: چه نیازی دارید که تَوان آن را پوشش نمی‌دهد؟
+      placeholder: "وقتی که ... می‌خواهم، با مشکل ... روبرو می‌شوم."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 💡 راه‌حل پیشنهادی
+      description: دوست دارید چه چیزی اضافه شود؟
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 جایگزین‌ها
+      description: چه روش‌های دیگری برای حل این مشکل وجود دارد؟
+  - type: textarea
+    id: scope
+    attributes:
+      label: 📐 دامنه
+      description: این ویژگی به چه موتورها یا لایه‌هایی مربوط است؟
+  - type: dropdown
+    id: type
+    attributes:
+      label: 🏷️ نوع ویژگی
+      options:
+        - موتور جدید
+        - بهبود موتور موجود
+        - ابزار توسعه
+        - مستندات
+        - زیرساخت
+        - دیگر
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ چک‌لیست
+      options:
+        - label: Issues موجود را جستجو کرده‌ام
+          required: true
+        - label: منشور رفتاری را خوانده‌ام
+          required: true

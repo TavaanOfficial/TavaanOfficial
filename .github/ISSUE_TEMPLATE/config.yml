@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 گزارش امنیتی حساس
+    url: ../../security/advisories/new
+    about: برای آسیب‌پذیری‌های حساس، از GitHub Security Advisories استفاده کنید (خصوصی و رازدار)
+  - name: 💬 گفت‌وگوی عمومی
+    url: ../../discussions
+    about: برای پرسش و گفت‌وگوی عمومی، از GitHub Discussions استفاده کنید
+  - name: 📖 راهنمای مشارکت
+    url: ../blob/main/CONTRIBUTING.md
+    about: پیش از مشارکت، راهنمای مشارکت را مطالعه کنید
+  - name: 📜 منشور رفتاری
+    url: ../blob/main/CODE_OF_CONDUCT.md
+    about: همهٔ مشارکت‌کنندگان باید این منشور را رعایت کنند
